@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+            <h1>ESTUDIO PRINGLES</h1><td></td>
+                <H2>Arquitectura, Diseño e Interiorismo</H2>
+    </header>
+            <nav>
+                <ol>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./sobreNosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./formularioContacto.html">Contacto</a></li>
+                </ol>
+            </nav>
+        <section>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint aperiam enim eum in aliquid? Id distinctio iusto, odit amet laboriosam suscipit unde repellat totam! Reprehenderit cum voluptatibus repellat repellendus doloribus?</p>
+        </section>
+    <!-- metodos post para que no se vea y el get si se vea
+    action para que se envie por URL (php, python, backend) -->
+        <form action="archivo.php" method="get">
+            <!-- label etiquetas de texto pero para formularios -->
+            <label for="nombre">Ingrese su Nombre</label>
+            <input name="nombre">
+
+            <label for="direccion">Ingrese su Direccion</label>
+            <input name="direccion">
+
+            <label for="opinion">Ingrese su Opinion</label>
+            <textarea name="opinion" id="" cols="30" rows="10"></textarea>
+
+            <label for="sexo">Mujer</label>
+            <input type="radio" name= "sexo" value="mujer">
+
+            <label for="sexo">Hombre</label>
+            <input type="radio" name= "sexo" value="hombre">
+
+            <label for="term y cond">Terminos y Condiciones</label>
+            <input type="checkbox" name="term y cond" value="acepto">
+
+            <!-- Etiqueta de Seleccion para menu desplegable-->
+            <label for="consulta">Hace tu Consulta</label>
+            <select name="consulta">
+                    <option value="presupuesto">Presupuesto</option>
+                    <option value="visitaObra">Visita a Obra</option>
+                    <option value="computo">Computo</option>
+            </select>
+
+            <input type="submit" value="enviar formulario">
+            <input type="reset" value="borrar">
+            <input type="button" value="nada">
+        </form>
+        <br>
+        <video src="../Assets_img/videos/BOB2.mp4"controls></video>
+        <footer>
+            <ul>
+                <li><img src="../Assets_img/facebook1.png" alt="Facebook"> <a href="https://www.facebook.com/fernandogabriel.reyna">Facebook</a></li>
+
+                <li><img src="../Assets_img/instagram1.png" alt="Instagram"> <a href="https://www.instagram.com/">Instagram</a></li>
+
+                <li> <img src="../Assets_img/linkdin1.png" alt="Linkedin"><a href="https://www.linkedin.com/in/fernando-reyna-8134a951/">Linkedin</a></li>
+            </ul>
+        </footer>
+</body>       
+</html>
