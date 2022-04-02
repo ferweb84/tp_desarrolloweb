@@ -1,0 +1,29 @@
+
+*{margin: 0;
+ padding: 0;
+}
+
+.portada_fondo {background-image:url(./Assets_img/casapiscina.jpg);
+background-repeat: no-repeat;} 
+
+#nav_bar {background-color:#BD4F25;}
+
+.titulos {color:#3D1A0C;
+    font-style: oblique;
+    text-align: center;
+    text-decoration:underline;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2{text-align: center;}
+
+
+
+ul {color: #3D1A0C;
+list-style-type:none;
+}
+.fondo_tabla {background-color: #7D3519;}
+
+.footer {background-color:nones;
+width: 100%;
+height: 100px;}
+
