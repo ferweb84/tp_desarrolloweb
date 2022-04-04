@@ -1,21 +1,26 @@
 
-*{margin: 0;
- padding: 0;
+* {margin: 0; padding: 0;
 }
 
 .portada_fondo {background-image:url(./Assets_img/casapiscina.jpg);
-background-repeat: no-repeat;
-background-attachment:scroll;background-size: cover;
+background-repeat:repeat;
+background-attachment:scroll;
+/* background-size: cover; */
 } 
 
-#nav_bar {background-color:#BD4F25;
-    width: 100%;
-    height: 60px;
+#nav_bar {background-color:rgb(68, 63, 63);
+    width:98,5%;
+    height: 70px;
+    
+    border:groove 10px grey;
     position: sticky;
     top:0px;
     /* para dejarla fija a la barra :position: fixed; */
     /* z index para poner el orden de superposicion de las imagenes en profundidad */
     z-index: 20px;
+    display: flex;
+    flex-direction:row ;
+    justify-content:space-between;
 }
 
 ul {
@@ -24,9 +29,15 @@ ul {
     }
     li{
         display: inline-block;
-        width: 15%;
+        width: 10%;
         position: relative;
-        font-size: 12px;
+        font-size: 15px;
+        font-family:roboto;
+        margin-left: 50px;
+        padding-left: 20px;
+        margin-top: 10px;
+        
+        color: black;
     }
     ul  ul {display: none;
             position: absolute;
@@ -38,7 +49,7 @@ ul {
         display: block;
     }
 
-.titulos {color:#3D1A0C;
+.titulos {color:black;
     font-style: oblique;
     text-align: center;
     text-decoration:underline;
@@ -47,61 +58,54 @@ ul {
 h2{text-align: center;}
 
 .texto{color:black;
-font-weight: bold;
-font-style: italic;
+    font-family: roboto;
+font-weight:strong bold;
+font-style:italic;
 font-size:22px;
 text-align: center;
+margin-top: 20px;
 /* overflow: scroll; */
 }
 
-.fondo_tabla {background-color: none;}
 
-.footer {background-color:nones;
-width: 100%;
-height: 100px;}
+
+.footer {background-color:rgb(68, 63, 63);
+width:98,5%;
+height: 110px;
+border:groove 10px grey;
+
+
+}
 .conjunto_obras {
     display:inline-block;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
 }
-
+.conjunto_obras{display: flex;}
 .obras{
     
-    width: 300px;
-    height: 450px;
-    background-color:rgb(95, 90, 90);
-    border-radius: 10px;
+    width: 200px;
+    height: 350px;
+    background-color:rgb(68, 63, 63);
+    border:groove 10px grey;
     padding: 20px;
     margin: 10px;
-    border:solid 1px black;
+    
 
 }
 .obras_nombres {
     text-align: center;
+    font-size: 15px;
 }
-.obras_foto{width: 300px;
-    height: 350px;
+.obras_texto{
+    font-size: 12px;
+}
+.obras_foto{width: 200px;
+    height: 250px;
     border-radius: 10px;
-    }
-.obras1{
-    
-        width: 300px;
-        height: 450px;
-        background-color:rgb(95, 90, 90);
-        
-        padding: 20px;
-        margin: 10px;
-        border-top:solid 10px grey;
-        border-right:solid 10px rgb(117, 110, 110);
-        border-bottom:solid 10px grey;
-        border-left:solid 10px rgb(117, 110, 110);
-    
-    }
-    .obras2{
-    
-        width: 300px;
-        height: 450px;
-        background-color:rgb(95, 90, 90);
-        border:groove 10px grey;
-        padding: 20px;
-        margin: 10px;
-    
+    border:solid 1px black;
     }
