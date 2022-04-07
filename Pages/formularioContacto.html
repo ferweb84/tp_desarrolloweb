@@ -4,22 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DESARROLLO WEB</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+        
+        <link rel="stylesheet" href="./style_contacto.css">
 </head>
-<body>
+<body class="portada_fondo">
     <header>
-            <h1>ESTUDIO PRINGLES</h1><td></td>
+                <h1 class="titulos">ESTUDIO PRINGLES</h1>
+                <td></td>
                 <H2>Arquitectura, Diseño e Interiorismo</H2>
     </header>
-            <nav>
-                <ol>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./portfolio.html">Portfolio</a></li>
-                    <li><a href="./sobreNosotros.html">Sobre Nosotros</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
-                    <li><a href="./formularioContacto.html">Contacto</a></li>
-                </ol>
-            </nav>
+                    <!-- COLORES: #BD4F25  #7D3519  #E3612D -->
+    <nav id="nav_bar">
+        <a class="" href="./index.html" >
+            <img class="nav__logo" src="../Assets_img/logo1.png" alt="logo blog" >
+            </a>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="./portfolio.html">PORTOFOLIO</a></li>
+            <li><a href="./sobreNosotros.html">SOBRE NOSOTROS</a>
+                <ul>
+                    <li><a href="">Equipo</a></li>
+                    <li><a href="">Clientes</a></li>
+                    <li><a href="">Proveedores</a></li>
+                </ul>
+            </li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="./formularioContacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <Main>
         <section>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint aperiam enim eum in aliquid? Id distinctio iusto, odit amet laboriosam suscipit unde repellat totam! Reprehenderit cum voluptatibus repellat repellendus doloribus?</p>
         </section>
@@ -58,15 +77,22 @@
             <input type="button" value="nada">
         </form>
         <br>
+    </Main>
         <video src="../Assets_img/videos/BOB2.mp4"controls></video>
-        <footer>
+        <footer class="footer">
+
+            Derechos Reservados - 2022
             <ul>
-                    <li><a href="https://www.facebook.com/fernandogabriel.reyna"><img src="../Assets_img/facebook1.png" alt="Facebook">Facebook</a></li>
-
-                    <li><a href="https://www.instagram.com/"><img src="../Assets_img/instagram1.png" alt="Instagram">Instagram</a></li>
-
-                    <li><a href="https://www.linkedin.com/in/fernando-reyna-8134a951/"> <img src="../Assets_img/linkdin1.png" alt="Linkedin">Linkedin</a></li>
+                <li><a href="https://www.facebook.com/fernandogabriel.reyna"><img src="../Assets_img/face-01.png" alt="Facebook"></a></li>
+    
+                <li><a href="https://www.instagram.com/"><img src="../Assets_img/insta-01.png" alt="Instagram"></a></li>
+    
+                <li><a href="https://www.linkedin.com/in/fernando-reyna-8134a951/"> <img src="../Assets_img/linkdin1.png" alt="Linkedin"></a></li>
+    
+                <li><a href="https://twitter.com/fernandoreyna21"> <img src="../Assets_img/twit-01.png" alt="twitter"></a></li>
             </ul>
+    
         </footer>
+    
 </body>       
 </html>
