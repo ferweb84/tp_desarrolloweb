@@ -1,17 +1,37 @@
 
-* {margin: 0; padding: 0;
+* {
+    margin: 0; 
+    padding: 0;
+}
+/* para recetear el color de los links del navegardor  */
+a{
+    text-decoration: none;
+    color: white;
 }
 
-.portada_fondo {background-image:url(./Assets_img/casapiscina.jpg);
-background-repeat:repeat;
-background-attachment:scroll;
-/* background-size: cover; */
+.portada_fondo {
+    background-image:url(./Assets_img/casapiscina.jpg);
+    background-repeat:repeat;
+    background-attachment:scroll;
+/* heigt:400px;
+background-size: cover; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
 } 
+.logo {
+    width: 180px;
+    padding: 5px;
+}
+.img_logo{width: 180px;
 
-#nav_bar {background-color:rgb(68, 63, 63);
-    width:98,5%;
-    height: 70px;
-    
+}
+.menu {
+    box-sizing: border-box;
+    background-color:rgb(68, 63, 63);
+    width:100%;
+    height: 90px;
     border:groove 10px grey;
     position: sticky;
     top:0px;
@@ -19,25 +39,19 @@ background-attachment:scroll;
     /* z index para poner el orden de superposicion de las imagenes en profundidad */
     z-index: 20px;
     display: flex;
-    flex-direction:row ;
-    justify-content:space-between;
+    justify-content: space-between;
+    align-items: center;
 }
 
 ul {
     list-style:none;
-    font-size:0 ;
+
     }
-    li{
+ul li{
         display: inline-block;
-        width: 10%;
-        position: relative;
-        font-size: 15px;
-        font-family:roboto;
-        margin-left: 50px;
-        padding-left: 20px;
-        margin-top: 10px;
+        font-size: 12px;
+        padding: 10px;
         
-        color: black;
     }
     ul  ul {display: none;
             position: absolute;
@@ -59,23 +73,16 @@ h2{text-align: center;}
 
 .texto{color:black;
     font-family: roboto;
-font-weight:strong bold;
-font-style:italic;
-font-size:22px;
-text-align: center;
-margin-top: 20px;
-/* overflow: scroll; */
+    font-weight:strong bold;
+    font-style:italic;
+    font-size:22px;
+    text-align: center;
+    margin-top: 20px;
+    /* overflow: scroll; */
 }
 
 
 
-.footer {background-color:rgb(68, 63, 63);
-width:98,5%;
-height: 110px;
-border:groove 10px grey;
-
-
-}
 .conjunto_obras {
     display:inline-block;
     flex-wrap: wrap;
@@ -85,27 +92,48 @@ border:groove 10px grey;
     align-content: center;
     
 }
-.conjunto_obras{display: flex;}
+.conjunto_obras{display: flex;
+}
+
 .obras{
-    
     width: 200px;
     height: 350px;
     background-color:rgb(68, 63, 63);
-    border:groove 10px grey;
+    border-radius: 7px;
+    box-shadow: 5px 5px 15px 5px black;
     padding: 20px;
     margin: 10px;
-    
-
 }
 .obras_nombres {
     text-align: center;
     font-size: 15px;
+    color: white;
 }
 .obras_texto{
     font-size: 12px;
+    color: white;
 }
 .obras_foto{width: 200px;
     height: 250px;
     border-radius: 10px;
     border:solid 1px black;
-    }
+}
+
+
+.footer {
+    background-color:rgb(68, 63, 63);
+    width:98,5%;
+    height: 110px;
+    border:groove 10px grey;
+}
+.audio_footer {
+    padding-left: 500px;
+
+}
+.copiright {
+    text-align:right;
+    padding-right: 40px;
+}
+.redes {
+    padding: 10px;
+}
