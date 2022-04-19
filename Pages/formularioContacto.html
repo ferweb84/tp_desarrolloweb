@@ -12,58 +12,84 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
         
         <link rel="stylesheet" href="./style_contacto.css">
-</head>
-<body class="portada_fondo">
-    <header>
+    </head>
+    <!-- ctrl+k+c y abre la linea de comentario -->
+    <body>
+    
+    <section class="contenedorPadre">
+    
+        <section class="menu">
+    
+                <nav class="logo">
+                    <a href="./index.html" >
+                    <img class="img_logo" src="../Assets_img/logo1.png" alt="logo blog" >
+                    </a>
+                </nav>
+        
+                <ul>
+                    <li><a href="../">HOME</a></li>
+                    <li><a href="../Pages/portfolio.html">PORTOFOLIO</a></li>
+                    <li><a href="../Pages/sobreNosotros.html">SOBRE NOSOTROS</a>
+                        <ul>
+                            <li><a href="">Equipo</a></li>
+                            <li><a href="">Clientes</a></li>
+                            <li><a href="">Proveedores</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../Pages/blog.html">BLOG</a></li>
+                    <li><a href="../Pages/formularioContacto.html">CONTACTO</a></li>
+                </ul>
+        </section>
+    
+        <div class="header">
+            <header>
                 <h1 class="titulos">ESTUDIO PRINGLES</h1>
                 <td></td>
-                <H2>Arquitectura, Diseño e Interiorismo</H2>
-    </header>
-                    <!-- COLORES: #BD4F25  #7D3519  #E3612D -->
-    <nav id="nav_bar">
-        <a class="" href="./index.html" >
-            <img class="nav__logo" src="../Assets_img/logo1.png" alt="logo blog" >
-            </a>
-        <ul>
-            <li><a href="../index.html">HOME</a></li>
-            <li><a href="./portfolio.html">PORTOFOLIO</a></li>
-            <li><a href="./sobreNosotros.html">SOBRE NOSOTROS</a>
-                <ul>
-                    <li><a href="">Equipo</a></li>
-                    <li><a href="">Clientes</a></li>
-                    <li><a href="">Proveedores</a></li>
-                </ul>
-            </li>
-            <li><a href="./blog.html">BLOG</a></li>
-            <li><a href="./formularioContacto.html">CONTACTO</a></li>
-        </ul>
-    </nav>
-    <Main>
-        <section>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint aperiam enim eum in aliquid? Id distinctio iusto, odit amet laboriosam suscipit unde repellat totam! Reprehenderit cum voluptatibus repellat repellendus doloribus?</p>
-        </section>
-    <!-- metodos post para que no se vea y el get si se vea
-    action para que se envie por URL (php, python, backend) -->
+                <H2 class="texto_header">Arquitectura, Diseño e Interiorismo</H2>
+                <p class="texto_header">
+                    Somos el camino a tu casa. Tenela en 4 simples pasos:
+                    INTERPRETACIÓN
+                    
+                    En una primera REUNIÓN DE INSPIRACIÓN, nos contás cómo querés vivir, cuáles son tus gustos e intereses, y los analizamos, en conjunto con las características del entorno para darte la mejor propuesta.
+                    IDEA
+                    
+                    Con la información obtenida, creamos un primer CONCEPTO. Te mostramos un esbozo de lo que nos imaginamos para tu vivienda. Con esta instancia, vas a estar seguro de que, al contratarnos, obtendrás la casa que responda a todos tus deseos.
+                    PROYECTO
+                    
+                    Tomamos la idea generada y la transformamos en un proyecto de arquitectura. Se define con absoluta precisión cada espacio y materialidad. Al finalizar esta instancia podrás vivenciar tu casa gracias a la REALIDAD VIRTUAL.
+                    OBRA
+                    
+                    Coordinamos cada agente que interviene en este nuevo proceso. Hacemos un seguimiento económico / financiero INTEGRAL, procurando que la obra se desarrolle en los tiempos y costos definidos de ante mano y la obtengas con las mejores Terminaciones.
+                    </p>
+            </header>
+        </div>
+    
+    <main class="set_main">
+    
+        <h3 class="main_nombres">"Vos encargate de soñarla,
+            que nosotros nos
+            encargamos de crearla".</h3>
+    
         <form action="archivo.php" method="get">
             <!-- label etiquetas de texto pero para formularios -->
             <label for="nombre">Ingrese su Nombre</label>
             <input name="nombre">
-
+    
             <label for="direccion">Ingrese su Direccion</label>
             <input name="direccion">
-
+    
             <label for="opinion">Ingrese su Opinion</label>
-            <textarea name="opinion" id="" cols="30" rows="10"></textarea>
-
+            <textarea name="opinion" id="" cols="65" rows="15"></textarea>
+    
             <label for="sexo">Mujer</label>
             <input type="radio" name= "sexo" value="mujer">
-
+    
             <label for="sexo">Hombre</label>
             <input type="radio" name= "sexo" value="hombre">
-
+    
             <label for="term y cond">Terminos y Condiciones</label>
             <input type="checkbox" name="term y cond" value="acepto">
-
+    
             <!-- Etiqueta de Seleccion para menu desplegable-->
             <label for="consulta">Hace tu Consulta</label>
             <select name="consulta">
@@ -71,28 +97,161 @@
                     <option value="visitaObra">Visita a Obra</option>
                     <option value="computo">Computo</option>
             </select>
-
+    
             <input type="submit" value="enviar formulario">
             <input type="reset" value="borrar">
             <input type="button" value="nada">
         </form>
         <br>
     </Main>
-        <video src="../Assets_img/videos/BOB2.mp4"controls></video>
+    
+    
         <footer class="footer">
-
-            Derechos Reservados - 2022
-            <ul>
-                <li><a href="https://www.facebook.com/fernandogabriel.reyna"><img src="../Assets_img/face-01.png" alt="Facebook"></a></li>
-    
-                <li><a href="https://www.instagram.com/"><img src="../Assets_img/insta-01.png" alt="Instagram"></a></li>
-    
-                <li><a href="https://www.linkedin.com/in/fernando-reyna-8134a951/"> <img src="../Assets_img/linkdin1.png" alt="Linkedin"></a></li>
-    
-                <li><a href="https://twitter.com/fernandoreyna21"> <img src="../Assets_img/twit-01.png" alt="twitter"></a></li>
-            </ul>
-    
+                <div class="audio_footer">
+                    <audio  src="../Assets_img/audios/Robin Schulz - Sunset (Original Mix).mp3"controls>Audio Musica</audio>
+                </div>
+                
+                <p class="copiright">Derechos Reservados - 2022
+                </p>
+                <div class="redes">
+                    <a href="https://www.facebook.com/fernandogabriel.reyna"><img src="../Assets_img/face-01.png" alt="Facebook"></a></li>
+                    <a href="https://www.instagram.com/"><img src="../Assets_img/instagram1.png" alt="Instagram"></a></li>
+                    <a href="https://www.linkedin.com/in/fernando-reyna-8134a951/"> <img src="../Assets_img/linkdin1.png" alt="Linkedin"></a></li>
+                    <a href="https://twitter.com/fernandoreyna21"> <img src="../Assets_img/twit-01.png" alt="twitter"></a></li>
+                </div>
         </footer>
     
-</body>       
-</html>
+    </section>
+    
+    
+    
+    <!-- 
+    <body class="portada_fondo">
+        <header>
+                    <h1 class="titulos">ESTUDIO PRINGLES</h1>
+                    <td></td>
+                    <H2>Arquitectura, Diseño e Interiorismo</H2>
+        </header>
+    
+        <section class="menu">
+    
+            <nav class="logo">
+                <a href="./index.html" >
+                <img class="img_logo" src="../Assets_img/logo1.png" alt="logo blog" >
+                </a>
+            </nav>
+    
+            <ul>
+                <li><a href="../">HOME</a></li>
+                <li><a href="../Pages/portfolio.html">PORTOFOLIO</a></li>
+                <li><a href="../Pages/sobreNosotros.html">SOBRE NOSOTROS</a>
+                    <ul>
+                        <li><a href="">Equipo</a></li>
+                        <li><a href="">Clientes</a></li>
+                        <li><a href="">Proveedores</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Pages/blog.html">BLOG</a></li>
+                <li><a href="../Pages/formularioContacto.html">CONTACTO</a></li>
+            </ul>
+        </section>
+    <main>
+            <section class="texto">
+                <p>Somos un estudio de Arquitectura, Interiorismo, Branding y Diseño Gráfico, fundado en 2012 con oficinas en Argentina y España. Tenemos una amplia experiencia en el desarrollo de diseños de restaurantes, centros comerciales, retail, oficinas y viviendas con personalidades singulares siendo conscientes del valor agregado que aporta el diseño en estos emprendimientos y en la vida de las personas que los habitan. Con una trayectoria profesional con más de 140 obras proyectadas y realizadas, algunas de ellas han tenido gran repercusión mediática posicionándose como referentes del diseño, tanto en Argentina como a nivel internacional.</p>
+                <br>
+    
+            </section>
+    <!- Formato Tarjeta: obras -->
+            <!-- <section class="conjunto_obras">
+                <div class="obras">
+                    <h3 class="obras_nombres">OBRA FAMILIA MASSARONI</h3>
+                    <p class="obras_texto">Lorem ipsum dolor sit, amet cfsf fsgdfg fgdfd dgsdf fdgonsectetur adipisicing elit</p>
+                    <br>
+                    <img class="obras_foto" src="../Assets_img/casa1.jpg" alt="">
+                    <button class="boton">Ver Mas</button>
+                </div>
+    
+                <div class="obras">
+                    <h3 class="obras_nombres">OBRA FAMILIA ROBERTSON</h3>
+                    <p class="obras_texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                    <br>
+                    <img class="obras_foto" src="../Assets_img/casa2.jpg" alt="">
+                    <button class="boton">Ver Mas</button>
+                </div>
+    
+                <div class="obras">
+                    <h3 class="obras_nombres">OBRA FAMILIA THOMPSON</h3>
+                    <p class="obras_texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                    <br>
+                    <img class="obras_foto" src="../Assets_img/casa3.jpg" alt="">
+                    <button class="boton">Ver Mas</button>
+                </div>
+    
+                <div class="obras">
+                    <h3 class="obras_nombres">OBRA FAMILIA SAMSONITE</h3>
+                    <p class="obras_texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                    <br>
+                    <img class="obras_foto" src="../Assets_img/casa4.jpg" alt="">
+                    <button class="boton">Ver Mas</button>
+                </div>
+            </section> -->
+    
+        <!-- <tr> = table row = fila de la tabla
+        <th> = table head = cabecera de la tabla
+        <td> = table data = celda de tabla -->
+                <!-- <table class="fondo_tabla" border="1" cellpadding ="4" cellspacing="5">
+                    <tr>
+                        <th>Nº</th>
+                        <th>Tipo de Obra</th>
+                        <th>Ubicacion</th>
+                        <th>Comitente</th>
+                        <th>Link de la obra </th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <td>Housing</td>
+                        <td>Cordoba</td>
+                        <td>Desarrollo UPC</td>
+                        <td>Link</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Vivienda</td>
+                        <td>Rosario</td>
+                        <td>Perez Garcia</td>
+                        <td>Link</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Duplex</td>
+                        <td>San Luis</td>
+                        <td>Flia Coder</td>
+                        <td>Link</td>
+                    </tr>
+                    </table> -->
+                    <!-- <div class="texto">
+                        <p>Somos un jóven grupo de inquietos con ganas que, después de estudiar Arquitectura, Diseño, Comunicación, Lettering o Arte, nos dedi amos todos a lo mismo: estudiar cómo dotar un lugar de alma para que se transforme en un escenario con vida.
+                            Pensamos en cómo hacer hablar a las texturas, para que nos reciten alguna sensación, en cómo un buen rincón puede ser el ingrediente secreto de un restó, o en cuál es la fórmula de contar historias sin usar ni letras ni palabras sólo la mímica de los espacios.
+                            Somos un estudio porque estudiamos cómo hacer todo esto, cómo ponerle un nombre y cómo hacer que su personalidad se manifieste desde el primer beso con sus nuevos dueños, sus habitantes.
+                            Somos profesionales obsesivos, exigentes y padres orgullosos de numerosos hijos que ya caminan solos y hoy, la idea es que conozcan el mundo.
+                            El idioma no es barrera; porque no hablamos español, sabemos decir hola, bienvenido, sentite cómodo en el idioma universal de la arquitectura con el alma.</p>
+                    </div>
+        </main>
+    
+                <footer class="footer">
+                    <div class="audio_footer">
+                        <audio  src="../Assets_img/audios/Robin Schulz - Sunset (Original Mix).mp3"controls>Audio Musica</audio>
+                    </div>
+                    
+                    <p class="copiright">Derechos Reservados - 2022
+                    </p>
+                    <div class="redes">
+                        <a href="https://www.facebook.com/fernandogabriel.reyna"><img src="../Assets_img/face-01.png" alt="Facebook"></a></li>
+                        <a href="https://www.instagram.com/"><img src="../Assets_img/instagram1.png" alt="Instagram"></a></li>
+                        <a href="https://www.linkedin.com/in/fernando-reyna-8134a951/"> <img src="../Assets_img/linkdin1.png" alt="Linkedin"></a></li>
+                        <a href="https://twitter.com/fernandoreyna21"> <img src="../Assets_img/twit-01.png" alt="twitter"></a></li>
+                    </div>
+    
+                </footer> -->
+    </body>
+    </html> 
