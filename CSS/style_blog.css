@@ -2,6 +2,10 @@
     margin: 0; 
     padding: 0;
 }
+.navbar{
+    background-color: rgb(68, 63, 63) !important;
+    
+}
 .carrusel {
     background-color: aqua;
     justify-items: center;
