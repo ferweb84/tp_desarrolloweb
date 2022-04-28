@@ -2,7 +2,10 @@
     margin: 0; 
     padding: 0;
 }
-
+.carrusel {
+    background-color: aqua;
+    justify-items: center;
+}
 @media (min-width:480px){
     .contenedorPadre{
         display: grid;
