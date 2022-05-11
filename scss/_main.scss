@@ -1,0 +1,85 @@
+@import "_variables";
+@import "_nav";
+@import "_header";
+@import "_footer";
+@import "_button";
+@import "_mixins";
+
+
+* {
+    margin: 0; 
+    padding: 0;
+}
+.lead {
+    color: white;
+    font-size: 15px;
+    .lead-medium {  
+        color: white;
+        font-size: 20px;  
+}}
+
+a{
+    text-decoration: none;
+}
+
+.button {
+    border: map-get($button, borde );
+    padding: map-get($button, padding );
+    border-radius: map-get($button, radio );
+}
+.button-primary{
+    @extend .button;
+    background-color: $colorprimario;
+    color: rgb(81, 42, 165);
+}
+
+.set_obras {
+    grid-area: set_obras;
+    display:inline-block;
+    // background-image:url(../Assets_img/para\ portada.jpg);
+    border-radius: 20px;
+    margin-top: 0px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    .obras{
+        width: 320px;
+        height: 350px;
+        background-color:rgb(68, 63, 63);
+        border-radius: 7px;
+        box-shadow: 5px 5px 15px 5px black;
+        padding: 30px;
+        margin: 50px;
+        .obras_nombres {
+            text-align: center;
+            font-size: 15px;
+            color: white;
+            .obras_texto{
+                font-size: 12px;
+                color: white;
+                .obras_foto{
+                    width: 320px;
+                    height: 280px;
+                    border-radius: 10px;
+                    border:solid 1px black;
+                    
+}}}}}
+
+button{ background-color: grey;
+    &:hover{background-color: rgb(62, 58, 58);}}
+
+.texto{background-color: rgb(160, 71, 8);
+    border-radius: 7px;
+    grid-area: texto;
+    color:black;
+    font-family: roboto;
+    font-weight:strong bold;
+    font-style:italic;
+    font-size:18px;
+    text-align: center;
+    margin-top: 20px;
+    /* overflow: scroll; */
+}

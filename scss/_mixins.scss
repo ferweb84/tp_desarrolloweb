@@ -1,0 +1,22 @@
+@mixin pPrincipales ($bg-color, $dark, $width, $height,){
+    background-color:$bg-color;
+    @if $dark==true {
+        color:white;
+        }
+    @else{color: black;}
+    width:$width ;
+    height: $height;
+}
+
+@mixin pSecundario ($bg-color, $font-color, $width, $height,){
+    background-color:$bg-color;
+    color: $font-color;
+    width:$width ;
+    height: $height;
+}
+// @mixin pPrincipales ($bg-color, $font-color, $width, $height,){
+//     background-color:$bg-color;
+//     color: $font-color;
+//     width:$width ;
+//     height: $height;
+// }
