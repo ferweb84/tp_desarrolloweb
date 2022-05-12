@@ -1,5 +1,4 @@
 
-/* para recetear el color de los links del navegardor  */
 
 * {
     margin: 0; 
@@ -20,17 +19,8 @@ a{
 .header {
     grid-area: header;
     background-color: rgb(169, 77, 12);
-    background-image:url(../Assets_img/logo-pagina.png) ;
-    /* background-image:url(../Assets_img/casapiscina.jpg); */
-    /* background-repeat:repeat; */
-    /* background-attachment:scroll; */
+    background-image:url(../Assets_img/Pportada.jpg) ;
     background-size: cover;
-/* heigt:400px;
-background-size: cover; */
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
     .texto_header {
         color: white;
         padding-top: 20px;
@@ -44,7 +34,7 @@ background-size: cover; */
             align-self:center;
             border-radius: 15px;
         
-                }}}
+}}}
 .titulos {
     font-size:25px;
     padding-top: 10px;
@@ -79,8 +69,6 @@ h2{text-align: center;
     box-shadow: 3px 3px 5px 3px black;
     position: sticky;
     top:0px;
-    /* para dejarla fija a la barra :position: fixed; */
-    /* z index para poner el orden de superposicion de las imagenes en profundidad */
     z-index: 20px;
     display: flex;
     justify-content: space-between;

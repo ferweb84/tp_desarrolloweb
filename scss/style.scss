@@ -15,37 +15,21 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows:  90px 210px 231px auto 50px ;
-        // grid-template-areas:'menu   menu  '
-        //                     'header header '
-        //                     'texto  texto  '
-        //                     'set_obras  set_obras  '
-        //                     'footer footer ';
-                            
 }
 
-/* para recetear el color de los links del navegardor  */
+
 a{
     text-decoration: none;
     color: white;
 }
 
 .header {
-    // grid-area: header;
     background-color: rgb(169, 77, 12);
     background-image:url(../Assets_img/logo-pagina.png) ;
     background-size: cover;
-    /* background-image:url(../Assets_img/casapiscina.jpg); */
-    /* background-repeat:repeat; */
-    /* background-attachment:scroll; *
-    /* heigt:400px; 
-    background-size: cover; */
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
+
     .texto_header {
         color: white;
-        /* overflow:scroll; */
         padding-top: 5px;
         text-align: center;
         font-size: 20px;
@@ -70,12 +54,9 @@ a{
 h2{text-align: center;
 }
 
-
-
 .set_obras {
-    // grid-area: set_obras;
+    background-image:url(../Assets_img/Pportada.jpg);
     display:inline-block;
-    // background-image:url(../Assets_img/para\ portada.jpg);
     border-radius: 20px;
     margin: 0px;
     flex-wrap: wrap;
@@ -108,28 +89,7 @@ h2{text-align: center;
     font-size:18px;
     text-align: center;
     margin-top: 20px;
-    /* overflow: scroll; */
 }
-
-
-// .footer {
-//     grid-area: footer;
-//     background-color:rgb(68, 63, 63);
-//     width:98,5%;
-//     height: 110px;
-//     border-radius: 5px;
-//     box-shadow: 3px 3px 10px 5px black;
-//     // .audio_footer{
-//     //     align-self: auto;
-//     //     padding-left: 95px; }  
-//         .copiright {
-//             text-align:right;
-//             .redes {
-//                 padding: 20px;
-//             }}}
-
-
-
 
 @media (min-width:768px){
     * {
@@ -141,23 +101,9 @@ h2{text-align: center;
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
         grid-template-rows:  90px 200px 420px 850px 50px ;
-        // grid-template-areas:'menu   menu   menu   menu'
-        //                     'header header header header'
-        //                     'texto  texto  texto  texto'
-        //             'set_obras  set_obras  set_obras  set_obras'
-        //                     'footer footer footer footer';
-                            
-        /* column-gap: 10px;
-        row-gap: 10px; */
-        /* gap: 10px; */
-        /*alinia los items desde el Padre
-        justify-items: stretch;
-        align-items: center; */
+
     }}
-    
-    
-    
-    /* para recetear el color de los links del navegardor  */
+
     a{
         text-decoration: none;
         color: white;
@@ -168,15 +114,6 @@ h2{text-align: center;
         background-color: rgb(169, 77, 12);
         background-image:url(../Assets_img/logo-pagina.png) ;
         background-size: cover;
-        /* background-image:url(../Assets_img/casapiscina.jpg); */
-        /* background-repeat:repeat; */
-        /* background-attachment:scroll; */
-        /* heigt:400px;
-        background-size: cover; */
-        /* display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center; */
         .titulos {
             font-size:18px;
             padding-top: 18px;
@@ -198,6 +135,8 @@ h2{text-align: center;
                     align-self:center;
                     border-radius: 15px;
 }}}}
+
+        
     
 h2{text-align: center;
     }
@@ -206,11 +145,9 @@ h2{text-align: center;
     width: 180px;
     padding: 5px;
     .img_logo{width: 180px;
+}}
     
-    }
-    }
-    
-    .menu {
+.menu {
         grid-area: menu;
         box-sizing: border-box;
         background-color:rgb(68, 63, 63);
@@ -220,8 +157,6 @@ h2{text-align: center;
         box-shadow: 3px 3px 5px 3px black;
         position: sticky;
         top:0px;
-        /* para dejarla fija a la barra :position: fixed; */
-        /* z index para poner el orden de superposicion de las imagenes en profundidad */
         z-index: 20px;
         display: flex;
         justify-content: space-between;
@@ -245,7 +180,7 @@ ul {
 .set_obras {
     grid-area: set_obras;
     display:inline-block;
-    // background-image:url(../Assets_img/para\ portada.jpg);
+    background-image:url(../Assets_img/Pportada.jpg);
     height: 900px;
     border-radius: 20px;
     margin: 15px;
