@@ -1,10 +1,9 @@
 .button {
-    border: map-get($button, border );
-    padding: map-get($button, padding );
-    border-radius: map-get($button, border-radius );
+    border: map-get($button, border1 );
+    padding: map-get($button, padding1 );
+    border-radius: map-get($button, border-radius1 );
 }
 .button-primary{
     @extend .button;
-    background-color: $colorprimario;
-    color: rgb(47, 20, 201);
+    @include pPrincipales  (blue,false, 100px, auto);
 }
